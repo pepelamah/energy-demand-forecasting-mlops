@@ -1,0 +1,17 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+.env.*
+.vscode/
+.idea/
+.venv/
+dist/
+build/
+*.egg-info/
+data/
+!data/.gitkeep
+.poetry/
+.poetry.lock
+.venv/

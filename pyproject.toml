@@ -1,0 +1,34 @@
+[project]
+name = "energy-demand-forecasting-mlops"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "lamahpep",email = "pepe-emmanuel.lamah@etu.utc.fr"}
+]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "pandas (>=2.3.3,<3.0.0)",
+    "numpy (>=2.3.5,<3.0.0)",
+    "scikit-learn (>=1.7.2,<2.0.0)",
+    "pydantic (>=2.12.4,<3.0.0)",
+    "joblib (>=1.5.2,<2.0.0)",
+    "python-multipart (>=0.0.20,<0.0.21)",
+    "uvicorn[standard] (>=0.38.0,<0.39.0)",
+    "fastapi[all] (>=0.121.2,<0.122.0)",
+    "mlflow (>=3.6.0,<4.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[dependency-groups]
+dev = [
+    "pytest (>=9.0.1,<10.0.0)",
+    "black (>=25.11.0,<26.0.0)",
+    "ruff (>=0.14.5,<0.15.0)",
+    "pre-commit (>=4.4.0,<5.0.0)",
+    "isort (>=7.0.0,<8.0.0)"
+]
